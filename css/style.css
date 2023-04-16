@@ -1,0 +1,166 @@
+*{
+    text-decoration: none;
+}
+
+header{
+    min-height: 90px;
+    margin-bottom: 250px;
+
+    background-color:lavenderblush;
+    align-items: center;
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-left: 12px;
+
+}
+.logo{
+    font-size: 34px;
+    color: black;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+
+}
+
+.head-top .container .row{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* --------------------------------------------------- */
+
+.content1{
+    margin-bottom: 250px;
+}
+
+.offer-text, .offer-button a, h4{
+    color: black;
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+.offer-button a{
+    color: white;
+}
+
+
+.offer-img img{
+    width: 750;
+    height: 450px;
+    border-radius: 40px;
+    filter: brightness(15555%)
+}
+
+.offer-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.offer-button a{
+    width: 300px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+/* --------------------------------------------------- */
+
+.content2{
+    margin-bottom: 150px;
+}
+
+.content2 .container .head{
+    margin-bottom: 20px;
+}
+
+.col-3  h2, .col-12 h1{
+    color: black;
+    text-align: center;
+}
+
+.col-3 p{
+    font-size: 20px;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.content2 .container .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------------------------------------------- */
+
+footer{
+
+
+    background-color: beige;
+}
+
+footer .container .row{
+    align-items: center;
+
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    align-items: center;
+    text-decoration: none;
+    color: #535353;
+}
+.footer-logo img{
+    width: 40px;
+    height: 30px;
+}
+
+.contacts p{
+    padding: 25px;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: rgb(99, 99, 99)
+}
+
+.social{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.TG{
+    width: 75px;
+    height: 75px;
+}
+@import "../node_modules/bootstrap/scss/functions";
+
+a:hover {
+    color:#929292;
+}
