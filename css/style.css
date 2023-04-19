@@ -88,7 +88,25 @@ a.navbar-brand:hover, a.nav-link:hover {
     color:#5e5e5e;
 }
 
+@media screen and (max-width: 576px){
+    a.navbar-brand{
+    font-size: 28px;
+    }
+}
 
+@media screen and (max-width: 410px){
+    a.navbar-brand{
+    font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 368px){
+    a.navbar-brand{
+        margin: 0;
+        left: 0;
+    } 
+
+}
 
 /* .nav-item .nav-link{
     text-decoration: none;
@@ -167,6 +185,33 @@ div.col-6{
 @media screen and (max-width: 992px){
     .offer-img img{
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .offer-text, .offer-button a, h4{
+        font-size: 50px;
+    }
+    .offer-button a{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .offer-text, .offer-button a, h4{
+        font-size: 40px;
+    }
+    .offer-button a{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .offer-text, .offer-button a, h4{
+        font-size: 40px;
+    }
+    .offer-button a{
+        width: 200px;
     }
 }
 
