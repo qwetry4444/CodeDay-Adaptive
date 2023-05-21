@@ -18,4 +18,13 @@
 
         return $task_statistics_array;
     }
+
+    function get_full_task($dbconn, $id)
+    {
+        $sql = 'SELECT * FROM "CodeDay".tasks  LEFT JOIN "CodeDay".task_statistics ON "tasks"."id_statistics"="task_statistics"."id_statistics" WHERE id=%d';
+        $sql = sprintf($sql, $id);
+        $query_result_full_task = pg_query($dbconn, $sql);
+        $full_task = pg_fetch_array($query_result_full_task);
+        return $full_task;
+    }
 ?> 

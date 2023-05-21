@@ -1,5 +1,4 @@
-<?php
-echo "
+
 <div class='content1'>
         <div class='container'>
             <div class='row'>
@@ -49,5 +48,29 @@ echo "
             </div>
         </div>
     </div>
-    "
-?><?php
+
+    <div class="content3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text_block">
+                        <div class="row">
+                            <h2>Contribute</h2>
+                        </div>
+                        <div class="row">
+                            <p>You can help the development of our project. Do you have a very interesting and challenging task? You can share it with other users of the site. Fill out the form and tell us about your task in more detail.</p>
+                        </div>
+                        <div class="button_add">
+                            <a href="main.php?page=new_task_form">Add new task</a>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="community_img">
+                        <img src="img/community.webp" alt="community" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

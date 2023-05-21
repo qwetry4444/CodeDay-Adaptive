@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_profile.css">
+    <link rel="stylesheet" href="css/style_header.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>CodeDay</title>
@@ -16,6 +18,9 @@
     ?>
 
     <?php
+        if(!isset($_GET['page']))
+            require('home.php');
+
         switch($_GET['page']){
             case 'home':
                 require('home.php');
@@ -29,7 +34,8 @@
                 require('task.php');
                 break;
                 
-            case 'statistic':
+            case 'progress':
+                require('progress.php');
                 break;
 
             case 'login':
@@ -37,8 +43,12 @@
                 break;
 
             case 'profile':
+                require('profile.php');
                 break;
-
+            
+            case 'new_task_form':
+                require('new_task_form.php');
+                break;
             }
     ?>
 

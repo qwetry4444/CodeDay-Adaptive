@@ -5,109 +5,6 @@
     text-decoration: none;
 }
 
-header{
-    min-height: 90px;
-    margin-bottom: 250px;
-
-    background-color:lavenderblush;
-
-}
-
-a.navbar-brand{
-    margin: auto;
-    display: flex;
-    align-items: center;
-    position:relative;
-    
-
-    font-size: 34px;
-    font-weight: 500;
-    color: black;
-    text-decoration: none;
-
-}
-
-a.nav-link{
-    color: black;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 26px;
-}
-li.nav-item{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-.navbar-nav{
-    width: 75%;
-}
-
-.collapse{
-    justify-content: center;
-}
-
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.head-top .container .row{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.burger_icon{
-    width: 50px;
-    height: 32px;
-}
-
-
-
-@media screen and (max-width: 992px) {
-    .navbar{display: flex; 
-            justify-content: center;}
-            
-    .navbar-nav{width: 100%}
-    
-    a.navbar-brand{position:relative;
-                    left: 55px;
-    }
-
-
-    li.nav-item:hover {
-        background-color:#e0e0e0;
-    }
-}
-
-a.navbar-brand:hover, a.nav-link:hover {
-    color:#5e5e5e;
-}
-
-@media screen and (max-width: 576px){
-    a.navbar-brand{
-    font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 410px){
-    a.navbar-brand{
-    font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 368px){
-    a.navbar-brand{
-        margin: 0;
-        left: 0;
-    } 
-
-}
-
 /* .nav-item .nav-link{
     text-decoration: none;
     color: black;
@@ -129,6 +26,8 @@ header .navbar .container .row{
 /* --------------------------------------------------- */
 
 .content1{
+    position: relative;
+    margin-top: 250px;
     margin-bottom: 250px;
 }
 
@@ -225,9 +124,21 @@ div.col-6{
     margin-bottom: 20px;
 }
 
+.content2 .col-lg-4{
+    padding: 30px;
+}
+
 .col-lg-4 .col-md-7 h2, .col-12 h1{
     color: black;
     text-align: center;
+}
+
+.col-12 h1{
+    font-size: 38px;
+}
+.col-lg-4 h2{
+    font-size: 34px;
+
 }
 
 .col-lg-4, .col-md-7 p{
@@ -246,18 +157,9 @@ div.col-6{
     justify-content: space-between;
 }
 
-.content2 .container .row.md{
-    display: flex;
-    justify-content: center;
-}
-
-
-
 /* --------------------------------------------------- */
 
 footer{
-
-
     background-color: beige;
 }
 
@@ -310,4 +212,72 @@ footer .container .row{
 
 a:hover {
     color:#929292;
+}
+
+/* ------------------------------------------------ */
+
+.content3{
+    margin-bottom: 200px;
+    align-items: center;
+}
+
+.content3 .row{
+    align-items: center;
+}
+
+.content3 h2, p, .button_add a{
+    color: #000;
+}
+
+.content3 h2{
+    font-size: 32px;
+}
+
+.content3 p, .button_add a{
+    font-size: 24px;
+}
+
+.text_block{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text_block .row{
+    display: flex;
+    justify-content: center;
+}
+
+.community_img img{
+    width: 500px;
+    height: 357px;
+}
+
+.community_img{
+    display: flex;
+    justify-content: center;
+}
+
+.button_add a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.button_add{
+    background-color: #000;
+    border-radius: 20px;
+    width: 170px;
+    height: 65px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.button_add a:hover{
+    color:#535353;
 }

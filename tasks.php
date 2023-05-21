@@ -8,8 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style_task.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap" rel="stylesheet"><title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap" rel="stylesheet"><title>Document</title>
 </head>
 <body>
 
@@ -25,8 +25,8 @@
                 <div class="col-2">Topic</div>
                 <div class="col-2">Complexity</div>
                 <div class="col-2">Solvability %</div>
-                <div class="col-1"><img src="img/like.png" alt="like" class="like"></div>
-                <div class="col-1"><img src="img/dislike.png" alt="dislike" class="dislike"></div>
+                <div class="col-1"><img src="img/like_white.png" alt="like" class="like"></div>
+                <div class="col-1"><img src="img/dislike_white.png" alt="dislike" class="dislike"></div>
             </div>
 
 
@@ -39,9 +39,11 @@
                     foreach($tasks as $task)
                     {
                         $task_statistics = get_task_statistics($dbconn, $task, 1);
-                        echo "<br/>";
+                        $task_id = $task['id'];
+                        $task_link = sprintf('task.php?task_num=%d', $task_id);
                 ?>
-                <a href="task.php?task_num=$task['id']">
+
+                <?php echo("<a href=$task_link>") ?>
                     <div class="row task">
                         <div class="col-1">
                             <?php

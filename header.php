@@ -17,18 +17,21 @@
                         <li class="nav-item">
                             <a href="main.php?page=tasks" class="nav-link">Tasks</a>
                         </li> 
-                        <li class="nav-item">
-                            <a href="main.php?page=statistic" class="nav-link">My statistic</a>
-                        </li>
-
+                        
+                        
                         <?php
-                            if (isset($_SESSION['username']))
-                            {
-                                echo ("<li class='nav-item'><a hreh='main.php?page=profile'> My profile </a></li>");
+                            session_start(["use_strict_mode" => true]);
+                            if (isset($_SESSION['user_id']))
+                            { 
+                                //require('exit.php'); onclick='exit()'
+                                echo ("<li class='nav-item'><a href='main.php?page=progress' class='nav-link'>Progress</a></li>");
+                                echo ("<li class='nav-item'><a href='main.php?page=profile' class='nav-link'> Profile </a></li>");
+                                echo ("<li class='nav-item'><a href='auth.php?logout=1' class='nav-link'><img src='img/exit.png' alt='Exit' class='exit'></a></li>"); 
                             }
                             else echo("<li class='nav-item'><a href='main.php?page=login' class='nav-link'>Login</a></li>");
                         ?>
                     </ul>
+                    
                 </div>
             </div>
         </nav>

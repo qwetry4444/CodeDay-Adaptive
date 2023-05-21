@@ -1,6 +1,7 @@
 <?php
     function connect()
     {
+        session_start(["use_strict_mode" => true]);
         $host = 'localhost';
         $port = 5434;   
         $dbname = 'CodeDay';
