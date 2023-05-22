@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500&display=swap" rel="stylesheet"><title>Document</title>
 </head>
 <body>
-
     <?php
         include 'connect.php';
         include 'get_tasks.php';
@@ -28,7 +27,6 @@
                 <div class="col-1"><img src="img/like_white.png" alt="like" class="like"></div>
                 <div class="col-1"><img src="img/dislike_white.png" alt="dislike" class="dislike"></div>
             </div>
-
 
             <div class="tasks">
                 <?php
@@ -85,12 +83,9 @@
                         </div>
                     </div>
                 </a>
-
-
     <?php
         }
     ?>
-    
             </div>
         </div>
 </body>
