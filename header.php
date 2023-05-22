@@ -26,7 +26,7 @@
                                 //require('exit.php'); onclick='exit()'
                                 echo ("<li class='nav-item'><a href='main.php?page=progress' class='nav-link'>Progress</a></li>");
                                 echo ("<li class='nav-item'><a href='main.php?page=profile' class='nav-link'> Profile </a></li>");
-                                echo ("<li class='nav-item'><a href='auth.php?logout=1' class='nav-link'><img src='img/exit.png' alt='Exit' class='exit'></a></li>"); 
+                                echo ("<li class='nav-item'><a href='auth.php?logout=1' class='nav-link'><img src='../img/exit.png' alt='Exit' class='exit'></a></li>"); 
                             }
                             else echo("<li class='nav-item'><a href='main.php?page=login' class='nav-link'>Login</a></li>");
                         ?>
