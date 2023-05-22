@@ -1,6 +1,5 @@
 <?php
 
-
 session_start(["use_strict_mode" => true]);
 if(isset($_POST['login']))
 {
@@ -9,9 +8,6 @@ if(isset($_POST['login']))
     $sql = "SELECT * FROM \"CodeDay\".users WHERE email = '%s'";
     $sql = sprintf($sql, $_POST['login']);
     $result = pg_query($db_conn, $sql);
-
-    
-
 
     if($row = pg_fetch_array($result))
     {
@@ -33,7 +29,6 @@ if(isset($_POST['login']))
             echo $_SESSION['message'];
             die();
         }
-
     }
     else 
     {
@@ -42,8 +37,8 @@ if(isset($_POST['login']))
         header("Location: main.php?page=login");
         die();
     }
-
 }   
+
 if ($_GET['logout'] == 1){
         $_GET['logout'] = 1;
         unset($_SESSION['username']);
@@ -56,5 +51,4 @@ if ($_GET['logout'] == 1){
     
     header("Location: main.php?page=login");
     die();
-
 ?>
