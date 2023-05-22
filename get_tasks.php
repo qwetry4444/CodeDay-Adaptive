@@ -27,4 +27,5 @@
         $full_task = pg_fetch_array($query_result_full_task);
         return $full_task;
     }
+    
 ?> 
