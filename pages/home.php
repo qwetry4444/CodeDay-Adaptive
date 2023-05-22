@@ -15,7 +15,7 @@
 
                 <div class='col-6'>
                     <div class='offer-img'>
-                        <img src='img/Apa-Itu-Programming-Pemrograman.jpg' alt='some code'>
+                        <img src='../img/Apa-Itu-Programming-Pemrograman.jpg' alt='some code'>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
                 <div class="col-lg-7">
                     <div class="community_img">
-                        <img src="img/community.webp" alt="community" >
+                        <img src="../img/community.webp" alt="community" >
                     </div>
                 </div>
             </div>

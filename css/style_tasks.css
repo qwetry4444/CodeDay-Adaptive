@@ -47,7 +47,7 @@
     width: 35px;
     height: 35px;
     margin-right: 5px;
-    background-color: #fff;
+    background-color: #fff  ;
 }
 
 .task div:not(:last-child){
@@ -119,7 +119,7 @@ div .task_menu{
     border: solid 2px;
 }
 
-.row div{
+.task div{
     justify-content: center;
     font-size: 18px;
 }

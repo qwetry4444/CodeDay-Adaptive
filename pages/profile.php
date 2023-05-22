@@ -1,6 +1,6 @@
 <?php 
 session_start(["use_strict_mode" => true]);
-require 'connect.php';
+require '../connect.php';
 $db_conn = connect();
 $sql = 'SELECT * FROM "CodeDay".users WHERE id = %s';
 $sql = sprintf($sql, $_SESSION['user_id']);

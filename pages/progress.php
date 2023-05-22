@@ -1,7 +1,7 @@
 <?php 
 session_start(["use_strict_mode" => true]);
-require 'connect.php';
-require 'get_user.php';
+require '../connect.php';
+require '../get_user.php';
 $db_conn = connect();
 $user = get_full_user($db_conn, $_SESSION['user_id']);
 // print_r($user);
