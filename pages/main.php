@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="../css/style_main.css">
     <link rel="stylesheet" href="../css/style_profile.css">
     <link rel="stylesheet" href="../css/style_header.css">
-    <link rel="stylesheet" href="../css/style_tasks.css">
-    <link rel="stylesheet" href="../css/style_task.css">
+
     <link rel="stylesheet" href="../login_page/css/light_theme.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
