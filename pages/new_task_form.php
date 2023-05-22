@@ -1,5 +1,4 @@
 
-
 <div class="container">
     <form method="post" action="post">
         <h2>Create new task</h2>
