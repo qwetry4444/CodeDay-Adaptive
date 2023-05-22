@@ -4,5 +4,4 @@ function exit(){
     $_SESSION['id'] = NULL;
     $_SESSION['username'] = NULL;
 }
-
 ?>
