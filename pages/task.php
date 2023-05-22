@@ -20,9 +20,6 @@
 
     $task = get_full_task($db_conn, $_GET['task_num']);
 
-
-    
-    // print_r($task);
 ?>
 <body>
     <div class="task_container">
