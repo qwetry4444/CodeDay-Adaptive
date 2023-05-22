@@ -6,6 +6,7 @@ function get_full_user($db_conn, $id)
     $sql = sprintf($sql, $_SESSION['user_id']);
     $result_query = pg_query($db_conn, $sql);
     $full_user = pg_fetch_array($result_query);
+    
     return $full_user;
 }
 ?>
