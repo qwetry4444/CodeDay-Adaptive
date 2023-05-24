@@ -1,0 +1,25 @@
+.input-box textarea{
+    margin-top: 20px;
+}
+textarea:focus ~ label,
+textarea:valid ~ label  
+{
+    top: -2px;
+}
+
+.add_new_task_form_box{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.add_new_task_form_box h2{
+    margin-bottom: 60px;
+}
+
+.add_new_task_form_box form{
+    padding: 50px;
+    border: solid 3px #000;
+    border-radius: 4px;
+}
