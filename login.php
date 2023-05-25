@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login_page/css/light_theme.css">
+    <link rel="stylesheet" href="css/light_theme.css">
     <title>Login</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <section>
         <div class="form-box">
             <div class="form-value">
-                <form method="post" action="auth.php">
+                <form method="post" action="../auth.php">
                     <h2>Login</h2>
                     <div class="input-box">
                         <ion-icon name="person-outline"></ion-icon>
