@@ -27,8 +27,6 @@
                 <div class="col-1"><img src="../img/like_white.png" alt="like" class="like"></div>
                 <div class="col-1"><img src="../img/dislike_white.png" alt="dislike" class="dislike"></div>
             </div>
-
-
             <div class="tasks">
                 <?php
                     $dbconn = connect();

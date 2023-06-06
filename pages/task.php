@@ -11,7 +11,7 @@
     <title>CodeDay Task</title>
 </head>
 <?php
-    require('../header.php');
+    require('header.php');
     require('../connect.php');
     require('../get_tasks.php');
     $db_conn = connect();

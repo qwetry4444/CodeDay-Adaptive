@@ -22,7 +22,7 @@
 <body>
     
     <?php
-        require('../header.php');
+        require('header.php');
     ?>
 
     <?php
@@ -65,10 +65,7 @@
     ?>
 
     <?php
-        require('../footer.php');
+        require('footer.php');
     ?>
-
-
-    
 </body>
 </html>
