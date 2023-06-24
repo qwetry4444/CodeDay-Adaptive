@@ -8,7 +8,7 @@
                             Let's write your <br> 1st program <br> And change your life
                         </div>
                         <div class='offer-button'>
-                            <a href='http://www.itmathrepetitor.ru/prog/zadachi-na-vychisleniya/' class='offer-link'>Get start</a>
+                            <a href='main.php?page=tasks' class='offer-link'>Get start</a>
                         </div>
                     </div>
                 </div>
