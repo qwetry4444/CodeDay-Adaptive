@@ -59,9 +59,11 @@
                 case 'new_task_form':
                     require('new_task_form.php');
                     break;
+                case 'register':
+                    require('register.php');
+                    break;
             }
         }
-
     ?>
 
     <?php
