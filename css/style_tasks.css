@@ -12,6 +12,7 @@
     border-radius: 15px;
     padding: 14px;
     margin-bottom: 10px;
+
 }
 
 .task{
@@ -27,7 +28,7 @@
     font-family: 'Wix Madefor Display', sans-serif;
     background-color: #0f0f0f;
 
-    
+
     padding: 20px;
     border: 3px solid #fff;
 
@@ -142,6 +143,7 @@ div .task_menu{
 .task_about-solving{
     display: flex;
     justify-content: space-between;
+    color: #000;
 }
 
 .task_about .col-6, .col-4{
@@ -169,4 +171,46 @@ form .submit_block{
 .code_field{
     border: solid 4px;
     display: flex;
+}
+
+.evaluation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.like_block{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.like_block a, .dislike_block a{
+    text-decoration: none;
+}
+
+.eval_link{
+    display: flex;
+}
+
+.eval_link h4{
+    text-decoration: none;
+    color: #000; 
+
+}
+
+.like_block:hover{
+    background-color: rgb(75, 255, 75);
+    border-radius: 10px;
+    .like{
+        background-color: rgb(75, 255, 75);
+    }
+}
+
+.dislike_block:hover{
+    background-color: rgb(255, 85, 85);
+    border-radius: 10px;
+    .dislike{
+        background-color: rgb(255, 85, 85);
+    }
 }
