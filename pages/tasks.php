@@ -35,7 +35,8 @@
                     {
                         $task_statistics = get_task_statistics($dbconn, $task, 1);
                         $task_id = $task['id'];
-                        $task_link = sprintf('task.php?task_num=%d', $task_id);
+                        $_GET['task_id'] = $task_id;
+                        $task_link = sprintf('task.php?task_id=%d', $task_id);
                 ?>
                 <?php echo("<a href=$task_link>") ?>
                     <div class="row task">
@@ -76,12 +77,9 @@
                         </div>
                     </div>
                 </a>
-
-
     <?php
         }
     ?>
-
             </div>
         </div>
 </body>
