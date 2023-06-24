@@ -14,13 +14,15 @@
     require('header.php');
     require('../connect.php');
     require('../get_tasks.php');
+    require('../decision_process.php');
     $db_conn = connect();
+    $save_link = "../save_program_code.php?task_id=%d";
+    $user_id = $_SESSION['user_id'];
+    $task_id = $_GET['task_id'];
+    $save_link = sprintf($save_link, $task_id);
+    $task = get_full_task($db_conn, $task_id);
+    $code = get_code($db_conn, $user_id, $task_id);
 
-    $task = get_full_task($db_conn, $_GET['task_num']);
-
-
-
-    // print_r($task);
 ?>
 <body>
     <div class="task_container">
@@ -46,7 +48,7 @@
                 </div>
                 <div class="row">
                     <h3>Task statistic</h3>
-                </div>
+                </div>      
                 <div class="row">
                     <div class="col-4">
                         <h4 >Number of attempts: <?php echo $task['count_try']?></h4>
@@ -58,28 +60,37 @@
                         <h4>Solvability percentage: <?php echo $task['solvability_percentage']?>%</h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="../img/like.png" alt="like" class="like">
-                        <h4>Count likes: <?php echo $task['count_like']?></h4>
+                <div class="row evaluation">
+                    <div class="col-6 like_block">
+                        <a href="../evaluation_processing.php?task_id=<?php echo($task_id)?>&amp;type=1">
+                            <div class="eval_link">
+                                <img src="../img/like.png" alt="like" class="like">
+                                <h4>Count likes: <?php echo $task['count_like']?></h4>
+                            </div>    
+                        </a>
                     </div>
-                    <div class="col-6">
-                        <img src="../img/dislike.png" alt="dislike" class="dislike">
-                        <h4>Count dislikes: <?php echo $task['count_dislike']?></h4>
+                    
+                    <div class="col-6 dislike_block">
+                        <a href="../evaluation_processing.php?task_id=<?php echo($task_id)?>&amp;type=0">
+                            <div class="eval_link">
+                                <img src="../img/dislike.png" alt="dislike" class="dislike">
+                                <h4>Count dislikes: <?php echo $task['count_dislike']?></h4> 
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col-5 task_solving">
-                <div class="select_pl">
-                    <select name="" id="">
-                        <option selected disabled>Select PL</option>
-                        <option value="1">Python</option>
-                        <option value="2">C</option>
-                        <option value="3">C++</option>
-                    </select>
-                </div>
-                <form action="">
-                    <textarea name="" id="" cols="80" rows="29" class="code_field"></textarea>
+                <form action="../submit_task.php?task_id=<?php echo $task_id?>" method="post">
+                    <div class="select_pl">
+                        <select name="pl" id="pl" required>
+                            <option selected disabled value="">Select PL</option>
+                            <option value="Python">Python</option>
+                            <option value="C">C</option>
+                            <option value="Cpp">C++</option>
+                        </select>
+                    </div>
+                    <textarea name="program_code" id="program_code" cols="80" rows="29" class="code_field"><?php echo($code)?></textarea>
                     <div class="submit_block">
                         <button type="sumbit" class="submit_task">Submit</button>
                     </div>
