@@ -1,12 +1,12 @@
 <?php 
-session_start(["use_strict_mode" => true]);
-require '../connect.php';
-$db_conn = connect();
-$sql = 'SELECT * FROM "CodeDay".users WHERE id = %s';
-$sql = sprintf($sql, $_SESSION['user_id']);
-$result_query = pg_query($db_conn, $sql);
-$user = pg_fetch_array($result_query);
-// print_r($user);
+    session_start(["use_strict_mode" => true]);
+    require '../connect.php';
+    $db_conn = connect();
+    $sql = 'SELECT * FROM "CodeDay".users WHERE id = %s';
+    $sql = sprintf($sql, $_SESSION['user_id']);
+    $result_query = pg_query($db_conn, $sql);
+    $user = pg_fetch_array($result_query);
+    // print_r($user);
 ?>
 
 <div class="container profile">
